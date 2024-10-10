@@ -7,8 +7,15 @@
   </head>
   <body>
     <!-- creating the simple hello world programm using plain html -->
-    <div id="root">
-      <h1>Hello World!</h1>
-    </div>
+    <div id="root"></div>
+
+    <!-- creating the simple hello world programm using javascript  -->
+    <script>
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Hello world using JavaScript";
+
+      const root = document.getElementById("root");
+      root.append(heading);
+    </script>
   </body>
 </html>
